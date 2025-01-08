@@ -24,11 +24,59 @@
                 <a href="index.php?action=delete&id=<?php echo $todo['id']; ?>" onclick="return confirm('Apakah Anda yakin ingin menghapus tugas ini?')" class="btn btn-outline-danger">Hapus</a>
                 <br>
                 <span>
-                    Dibuat Pada : <?php echo $todo['created_at']?>
+                    Dibuat Pada : <?php 
+                        $date = new DateTime($todo['created_at']);
+                        $bulan = [
+                            1 => 'Januari',
+                            2 => 'Februari',
+                            3 => 'Maret',
+                            4 => 'April',
+                            5 => 'Mei',
+                            6 => 'Juni',
+                            7 => 'Juli',
+                            8 => 'Agustus',
+                            9 => 'September',
+                            10 => 'Oktober',
+                            11 => 'November',
+                            12 => 'Desember'
+                        ];
+                        
+                        $hari = $date->format('j');
+                        $bulanIndo = $bulan[(int)$date->format('n')];
+                        $tahun = $date->format('Y');
+                        $jam = $date->format('H');
+                        $menit = $date->format('i');
+
+                        echo "$hari $bulanIndo $tahun, $jam:$menit";
+                    ?>
                 </span>
                  | 
                 <span>
-                    Diperbarui Pada : <?php echo $todo['updated_at']?>
+                    Diperbarui Pada : <?php 
+                        $date = new DateTime($todo['created_at']);
+                        $bulan = [
+                            1 => 'Januari',
+                            2 => 'Februari',
+                            3 => 'Maret',
+                            4 => 'April',
+                            5 => 'Mei',
+                            6 => 'Juni',
+                            7 => 'Juli',
+                            8 => 'Agustus',
+                            9 => 'September',
+                            10 => 'Oktober',
+                            11 => 'November',
+                            12 => 'Desember'
+                        ];
+                        
+                        $hari = $date->format('j');
+                        $bulanIndo = $bulan[(int)$date->format('n')];
+                        $tahun = $date->format('Y');
+                        $jam = $date->format('H');
+                        $menit = $date->format('i');
+
+                        echo "$hari $bulanIndo $tahun, $jam:$menit";
+                    ?>
                 </span>
             </li>
         <?php endforeach; ?>
