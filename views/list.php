@@ -19,9 +19,9 @@
                 <span class="<?php echo $todo['completed'] ? 'completed' : ''; ?>">
                     <?php echo htmlspecialchars($todo['task']); ?>
                 </span>
-                <a href="index.php?action=edit&id=<?php echo $todo['id']; ?>" class="btn btn-outline-success">Edit</a>
-                 | 
-                <a href="index.php?action=delete&id=<?php echo $todo['id']; ?>" onclick="return confirm('Apakah Anda yakin ingin menghapus tugas ini?')" class="btn btn-outline-danger">Hapus</a>
+                <a href="index.php?action=edit&id=<?php echo $todo['id']; ?>" style="color:darkgreen; margin-right: 3px">Edit</a>
+                 |
+                <a href="index.php?action=delete&id=<?php echo $todo['id']; ?>" onclick="return confirm('Apakah Anda yakin ingin menghapus tugas ini?')" style="color:red; margin-left: 3px">Hapus</a>
                 <br>
                 <span>
                     Dibuat Pada : <?php 
