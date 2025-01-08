@@ -4,9 +4,13 @@
     <title>To-Do List</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 </head>
 <body>
-    <h1>To-Do List</h1>
+    <h1>
+        To-Do List
+        <i class="ph ph-note-pencil"></i>
+    </h1>
     <a href="index.php?action=create" class="btn btn-outline-primary">Tambah Tugas Baru</a>
     <hr>
     <ul>
