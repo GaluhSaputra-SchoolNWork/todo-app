@@ -47,15 +47,16 @@ textarea {
 
 input[type="submit"],
 button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    background-color: #5cb85c;
+    padding: 8px 12px;
+    background-color: #007bff;
     color: white;
+    border: none;
     cursor: pointer;
+    border-radius: 4px;
 }
+
 button:hover {
-    background-color: #4cae4c;
+    background-color: #0056b3;
 }
 
 .form-container{
@@ -67,4 +68,10 @@ button:hover {
 .completed{
     text-decoration: line-through;
     color: gray;
+}
+
+.container{
+    display: flex;
+    margin-left: 50px;
+    background-color: white;
 }
